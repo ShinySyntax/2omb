@@ -1,62 +1,38 @@
-<h1> PDA Token Management Program </h1>
+# 🪦Welcome to the 2omb ecosystem🪦
+[
+Thanks for taking the time to contribute!
+You can start by reading our [Contribution guidelines](CONTRIBUTING.md) first.](url)
 
-This Rust program is designed to demonstrate the creation and management of a Program Derived Address (PDA) on the Solana blockchain. It includes basic functionality to manage token accounts associated with a PDA.
-Prerequisites
+## Setup
 
-Before you begin, make sure you have the following installed:
+Install the dependencies
 
-    Rust programming environment
-    Solana CLI and tools
+```shell
+yarn
+yarn start
+```
 
-You can find installation instructions for Rust here and for Solana here.
-Installation
+Make sure you've configured your IDE with `prettier`.
 
-Clone the repository and navigate to the project directory:
+You can reformat the project by running
 
-    git clone https://github.com/yourusername/pda_token_management.git
-    cd pda_token_management
+```shell
+npx prettier --write .
+```
 
-<h2>Building the Project</h2>
+## Project structure
 
-To build the project, run the following command in the root of the project directory:
+- **components** contains generic components used inside the application.
+- **views** contains building blocks for each page. The entry point of a view is used as the root component of each route.
+- **config** contains all the config files and ABIs.
+- **state** contains the redux files for the global state of the app.
+- **contexts** contains global contexts.
+- **hooks** contains generic hooks.
+- **utils** contains generic utilities functions.
 
-bash
+## Useful Resources
 
-cargo build
-
-Running the Program
-
-To deploy this program to the Solana devnet, you must first ensure you have a funded Solana wallet. Follow these steps:
-
-    Set Solana CLI config to devnet:
-
-    solana config set --url devnet
-
-<h2>Deploy the program:</h2>
-
-    solana program deploy target/deploy/pda_token_management.so
-
-This will output a program ID which you will use to interact with the program.
-Testing the Program
-
-To run the included tests, execute:
-
-    cargo test
-
-This will run the tests defined in the tests/ directory, ensuring that the program logic functions as expected.
-Interacting with the Program
-
-You can interact with the program using the Solana CLI or by writing client scripts. For a basic example of sending a transaction to your program:
-
-    solana call <PROGRAM_ID> <INPUT_DATA> --accounts <ACCOUNTS>
-
-Replace <PROGRAM_ID>, <INPUT_DATA>, and <ACCOUNTS> with your actual program ID, the input data for your instruction, and the public keys of the involved accounts, respectively.
-Contributing
-
-Contributions to this project are welcome! Please fork the repository and submit a pull request with your proposed changes.
-License
-
-This project is licensed under the MIT License - see the LICENSE.md file for details.
-Support
-
-For support, open an issue on the GitHub project page.
+- [Our project documentation](https://docs.2omb.finance/) will help you understand before start contributing
+- Join our [Discord](https://discord.gg/GYYwUKQdgu) community
+- Or if you are more of a [Telegram Zombie](https://t.me/+ixpXDfee5EIzNmYx) we have that too
+- Bugs? Use the [Issues]() section of our github to report them
